@@ -6,6 +6,8 @@ use App\Item;
 
 class AgedBrie extends AbstractBaseItem
 {
+    const NAME = 'Aged Brie';
+
     public function update(Item $item): void
     {
         $this->decreaseSellIn($item);

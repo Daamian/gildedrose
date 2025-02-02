@@ -1,6 +1,6 @@
 <?php
 
-use App\GildedRoseLegacy;
+use App\GildedRoseFactory;
 use App\Item;
 use PHPUnit\Framework\TestCase;
 
@@ -18,7 +18,7 @@ class GildedRoseTest extends TestCase
     {
         $item = new Item($name, $sellIn, $quality);
 
-        $gildedRose = new GildedRoseLegacy();
+        $gildedRose = GildedRoseFactory::create();
         $gildedRose->updateQuality($item);
 
         $this->assertEquals($expectedSellIn, $item->sellIn);

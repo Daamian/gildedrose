@@ -6,6 +6,8 @@ use App\Item;
 
 class BackstagePasses extends AbstractBaseItem
 {
+    const NAME = 'Backstage passes to a TAFKAL80ETC concert';
+
     public function update(Item $item): void
     {
         $this->decreaseSellIn($item);

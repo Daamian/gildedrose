@@ -4,6 +4,8 @@ namespace App;
 
 final class GildedRoseLegacy implements GildedRoseInterface
 {
+    const VERSION = 'v1';
+
     public function updateQuality(Item $item): void
     {
         if ($item->name != 'Aged Brie' and $item->name != 'Backstage passes to a TAFKAL80ETC concert') {
