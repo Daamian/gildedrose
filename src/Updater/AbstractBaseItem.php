@@ -4,7 +4,7 @@ namespace App\Updater;
 
 use App\Item;
 
-abstract class AbstractBaseUpdater implements ItemUpdaterInterface
+abstract class AbstractBaseItem implements ItemInterface
 {
     abstract public function update(Item $item): void;
 

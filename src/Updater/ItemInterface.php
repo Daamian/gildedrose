@@ -4,7 +4,7 @@ namespace App\Updater;
 
 use App\Item;
 
-interface ItemUpdaterInterface
+interface ItemInterface
 {
     public function update(Item $item): void;
 }
